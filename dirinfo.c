@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+
 void olist(){
 
 
@@ -13,7 +17,6 @@ void dlist(){
 }
 
 int fsize(){
-
   return 0;
 }
 
@@ -23,3 +26,4 @@ int main(){
   olist();
   return 0;
 }
+
