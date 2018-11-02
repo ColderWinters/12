@@ -2,28 +2,14 @@
 #include <stdlib.h>
 #include <sys/stat.h>
 
-void olist(){
+int main(int argc, char *argv[] ){
 
-
-}
-
-void rlist(){
-  
-}
-
-void dlist(){
-
-
-}
-
-int fsize(){
-  return 0;
-}
-
-int main(){
+  DIR directory;
+  if (argc > 1){
+    directory = opendir(argv[1]);
+  }
   printf("Statistics for directory: \n");
   printf("Total Directory Size:%i Bytes \n", fsize());
-  olist();
   return 0;
 }
 
